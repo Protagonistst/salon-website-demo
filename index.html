@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html lang="ka" data-theme="a">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Salon Name | სილამაზის სალონი</title>
+<meta name="description" content="სილამაზის სალონის საიტის შაბლონი: ონლაინ ჯავშანი, ფასები, გუნდი, გალერეა და კონტაქტი.">
+<meta name="theme-color" content="#faf6f0">
+<link rel="canonical" href="https://protagonistst.github.io/salon-website-demo/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://protagonistst.github.io/salon-website-demo/">
+<meta property="og:title" content="Salon Name | Beauty salon website demo">
+<meta property="og:description" content="Beauty salon website template: online booking, prices, team, gallery and contact.">
+<meta property="og:image" content="https://protagonistst.github.io/salon-website-demo/assets/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preload" as="image" href="assets/img/hero-800.webp" imagesrcset="assets/img/hero-800.webp 800w, assets/img/hero-1200.webp 1200w" imagesizes="(min-width: 900px) 460px, 90vw">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Georgian:wght@400;500;600&family=Noto+Sans+Georgian:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "BeautySalon",
+ "name": "Salon Name",
+ "url": "https://protagonistst.github.io/salon-website-demo/",
+ "image": "https://protagonistst.github.io/salon-website-demo/assets/og-image.jpg",
+ "telephone": "+995000000000",
+ "email": "hello@example.com",
+ "address": {
+  "@type": "PostalAddress",
+  "addressLocality": "Tbilisi",
+  "addressCountry": "GE"
+ },
+ "openingHoursSpecification": [
+  {
+   "@type": "OpeningHoursSpecification",
+   "dayOfWeek": [
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+    "Sunday"
+   ],
+   "opens": "10:00",
+   "closes": "20:00"
+  }
+ ]
+}
+</script>
+<script>
+  /* apply the saved colour theme before first paint */
+  (function () {
+    var r = document.documentElement, t = new URLSearchParams(location.search).get('theme');
+    try { t = t || localStorage.getItem('tpl-theme'); } catch (e) {}
+    if (t === 'a' || t === 'b' || t === 'c') { r.setAttribute('data-theme', t); }
+    r.className += ' js';
+  })();
+</script>
+</head>
+<body>
+
+<svg class="sprite" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"><symbol id="i-crown" viewBox="0 0 48 32"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"><path d="M8 25 5 10l10 7 9-11 9 11 10-7-3 15z"/><path d="M9 29.5h30"/></g><g fill="currentColor"><circle cx="24" cy="3.2" r="1.7"/><circle cx="4.2" cy="7.6" r="1.5"/><circle cx="43.8" cy="7.6" r="1.5"/></g></symbol><symbol id="i-phone" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" d="M21 16.9v2.6a1.9 1.9 0 0 1-2.1 1.9 18.9 18.9 0 0 1-8.2-2.9 18.5 18.5 0 0 1-5.7-5.7A18.9 18.9 0 0 1 2.1 4.6 1.9 1.9 0 0 1 4 2.5h2.6a1.9 1.9 0 0 1 1.9 1.6c.12.9.34 1.8.66 2.65a1.9 1.9 0 0 1-.43 2L7.7 9.7a15 15 0 0 0 5.7 5.7l.95-1.03a1.9 1.9 0 0 1 2-.43c.85.32 1.74.54 2.65.66A1.9 1.9 0 0 1 21 16.9z"/></symbol><symbol id="i-pin" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6"><path d="M20 10.5c0 6-8 11.5-8 11.5s-8-5.5-8-11.5a8 8 0 1 1 16 0z"/><circle cx="12" cy="10.3" r="2.8"/></g></symbol><symbol id="i-clock" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M12 6.8V12l3.4 2"/></g></symbol><symbol id="i-mail" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="2.4"/><path d="m3.6 6.6 8.4 5.8 8.4-5.8"/></g></symbol><symbol id="i-ig" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.4 6.6h.01"/></g></symbol><symbol id="i-fb" viewBox="0 0 24 24"><path fill="currentColor" d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5.02 3.66 9.18 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.52 1.49-3.91 3.77-3.91 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.78-1.63 1.57v1.89h2.78l-.44 2.9h-2.34V22c4.78-.76 8.44-4.92 8.44-9.94z"/></symbol><symbol id="i-wa" viewBox="0 0 24 24"><path fill="currentColor" d="M12.04 2C6.6 2 2.2 6.4 2.2 11.84c0 1.94.53 3.76 1.45 5.32L2 22l4.98-1.6a9.78 9.78 0 0 0 5.06 1.4h.01c5.43 0 9.84-4.4 9.84-9.84C21.89 6.4 17.48 2 12.04 2zm0 17.96h-.01a8.2 8.2 0 0 1-4.17-1.14l-.3-.18-2.95.95.96-2.88-.2-.3a8.14 8.14 0 0 1-1.25-4.36c0-4.5 3.67-8.16 8.18-8.16a8.16 8.16 0 0 1 8.16 8.17c0 4.5-3.67 8.16-8.17 8.16zm4.5-6.11c-.25-.13-1.46-.72-1.68-.8-.23-.09-.39-.13-.56.12s-.64.8-.78.97c-.15.16-.29.18-.53.06a6.7 6.7 0 0 1-1.97-1.21 7.4 7.4 0 0 1-1.37-1.7c-.14-.25-.02-.38.11-.5.11-.11.25-.29.37-.44.12-.15.16-.25.25-.42.08-.16.04-.31-.02-.44-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.41-.56-.42h-.47c-.16 0-.43.06-.65.31-.22.25-.85.83-.85 2.03s.87 2.35.99 2.51c.12.16 1.71 2.62 4.15 3.67.58.25 1.03.4 1.39.51.58.19 1.11.16 1.53.1.47-.07 1.46-.6 1.66-1.17.21-.58.21-1.07.15-1.17-.06-.11-.22-.17-.47-.29z"/></symbol><symbol id="i-arrow" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" d="M4 12h15m-6-6 6 6-6 6"/></symbol><symbol id="i-check" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" d="m5 12.5 4.5 4.5L19 7.5"/></symbol><symbol id="i-award" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.4"><circle cx="12" cy="9" r="5.2"/><path d="M8.3 13.4 7.2 21l4.8-2.5 4.8 2.5-1.1-7.6"/></g></symbol><symbol id="i-heart" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.4" d="M12 20.2S4 15.5 4 9.9a4.2 4.2 0 0 1 8-1.8 4.2 4.2 0 0 1 8 1.8c0 5.6-8 10.3-8 10.3z"/></symbol><symbol id="i-leaf" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.4"><path d="M12 21v-7"/><path d="M12 14c0-4 2.6-7.4 7-8-.3 4.6-3 7.4-7 8z"/><path d="M12 16c-3.6-.4-6-2.9-6.4-6.6 3.9.5 6.1 3 6.4 6.6z"/></g></symbol><symbol id="i-mobile" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.4"><rect x="6.8" y="2.6" width="10.4" height="18.8" rx="2.4"/><path d="M10.8 18.6h2.4"/></g></symbol><symbol id="i-image" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" stroke-width="1.3"><rect x="3" y="4.5" width="18" height="15" rx="2.5"/><circle cx="8.5" cy="9.5" r="1.6"/><path d="m3.5 17.5 5-4.6 4 3.4 3-2.4 5 4.2"/></g></symbol><symbol id="i-plus" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" d="M12 5v14M5 12h14"/></symbol><symbol id="i-close" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" d="M6 6l12 12M18 6 6 18"/></symbol><symbol id="i-left" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" d="m15 5-7 7 7 7"/></symbol><symbol id="i-right" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" d="m9 5 7 7-7 7"/></symbol><symbol id="i-quote" viewBox="0 0 24 24"><path fill="currentColor" d="M10 6.5C7 7.6 5.2 10 5.2 13.4V18h5.4v-5.4H8.2c.1-1.9 1-3.2 2.7-4zm8.8 0c-3 1.1-4.8 3.5-4.8 6.9V18h5.4v-5.4H17c.1-1.9 1-3.2 2.7-4z"/></symbol></svg>
+
+<a class="skip" href="#main" data-i18n="skip">მთავარ შინაარსზე გადასვლა</a>
+
+<header class="site-header" id="siteHeader">
+  <div class="wrap">
+    <nav class="nav" aria-label="მთავარი ნავიგაცია" data-i18n-attr="aria-label=nav.label">
+      <a class="wordmark" href="#hero" aria-label="Salon Name, გვერდის თავში დაბრუნება" data-i18n-attr="aria-label=nav.home">
+        <span class="monogram" aria-hidden="true">S</span>
+        <span class="wordmark-text"><small>SALON</small><b>NAME</b></span>
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about" data-i18n="nav.about">ჩვენ შესახებ</a></li>
+        <li><a href="#services" data-i18n="nav.services">სერვისები</a></li>
+        <li><a href="#team" data-i18n="nav.team">გუნდი</a></li>
+        <li><a href="#gallery" data-i18n="nav.gallery">გალერეა</a></li>
+        <li><a href="#contact" data-i18n="nav.contact">კონტაქტი</a></li>
+      </ul>
+
+      <div class="nav-tools">
+        <div class="lang" role="group" aria-label="ენის არჩევა" data-i18n-attr="aria-label=lang.label"><button type="button" data-lang="ka" aria-pressed="true" lang="ka">ქარ</button><button type="button" data-lang="en" aria-pressed="false" lang="en">EN</button></div>
+        <a class="btn btn-primary nav-cta" href="#booking" data-i18n="cta.book">დაჯავშნე</a>
+        <button class="burger" id="burger" aria-label="მენიუს გახსნა" aria-expanded="false" aria-controls="mobileMenu" data-i18n-attr="aria-label=menu.open">
+          <span class="burger-bar"></span>
+          <span class="burger-bar"></span>
+          <span class="burger-bar"></span>
+        </button>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+  <div class="wrap">
+    <div class="inner">
+      <ul>
+        <li><a class="m-link" href="#about" data-i18n="nav.about">ჩვენ შესახებ</a></li>
+        <li><a class="m-link" href="#services" data-i18n="nav.services">სერვისები</a></li>
+        <li><a class="m-link" href="#team" data-i18n="nav.team">გუნდი</a></li>
+        <li><a class="m-link" href="#gallery" data-i18n="nav.gallery">გალერეა</a></li>
+        <li><a class="m-link" href="#faq" data-i18n="nav.faq">კითხვები</a></li>
+        <li><a class="m-link" href="#contact" data-i18n="nav.contact">კონტაქტი</a></li>
+      </ul>
+      <a class="btn btn-primary" href="#booking" data-i18n="cta.bookOnline">დაჯავშნე ონლაინ</a>
+      <div class="m-tools">
+        <div class="lang" role="group" aria-label="ენის არჩევა" data-i18n-attr="aria-label=lang.label"><button type="button" data-lang="ka" aria-pressed="true" lang="ka">ქარ</button><button type="button" data-lang="en" aria-pressed="false" lang="en">EN</button></div>
+        <div class="themes"><button type="button" class="theme-dot" data-theme-set="a" aria-pressed="true" aria-label="ფერის თემა: კრემი და ოქრო" title="ფერის თემა: კრემი და ოქრო" data-i18n-attr="aria-label=theme.a,title=theme.a"><span style="--sw-a:#b08a4a;--sw-b:#faf6f0"></span></button><button type="button" class="theme-dot" data-theme-set="b" aria-pressed="false" aria-label="ფერის თემა: კონიაკი და მუხა" title="ფერის თემა: კონიაკი და მუხა" data-i18n-attr="aria-label=theme.b,title=theme.b"><span style="--sw-a:#a8693a;--sw-b:#f7f2ea"></span></button><button type="button" class="theme-dot" data-theme-set="c" aria-pressed="false" aria-label="ფერის თემა: გვიმრა და მარმარილო" title="ფერის თემა: გვიმრა და მარმარილო" data-i18n-attr="aria-label=theme.c,title=theme.c"><span style="--sw-a:#4a7a5d;--sw-b:#f6f7f3"></span></button></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<main id="main">
+
+<section id="hero" class="hero">
+  <div class="wrap">
+    <div class="hero-inner">
+      <div>
+        <svg class="crown reveal" viewBox="0 0 48 32" aria-hidden="true"><use href="#i-crown"/></svg>
+        <h1 class="hero-logo reveal">
+          <span class="salon">SALON</span>
+          <span class="sajaia">NAME</span>
+        </h1>
+        <div class="rule reveal d1" aria-hidden="true"><span></span></div>
+        <p class="hero-tagline reveal d1" data-i18n="hero.tag">სრულყოფილი მოვლა, პროფესიონალთა ხელში</p>
+        <p class="hero-sub reveal d2" data-i18n="hero.sub">თმა, კანი, ფრჩხილები და მაკიაჟი ერთად, ერთ სივრცეში, გამოცდილი სტილისტების ზრუნვით. ბუნებრივი შუქი, ცოცხალი მცენარეები და მშვიდი გარემო ყოველ ვიზიტს დასვენების შეგრძნებად აქცევს.</p>
+        <div class="hero-actions reveal d2">
+          <a class="btn btn-primary" href="#booking" data-i18n="cta.book">დაჯავშნე</a>
+          <a class="btn btn-outline" href="tel:+995000000000">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-phone"/></svg>
+            +995 5XX XX XX XX
+          </a>
+        </div>
+        <div class="hero-meta reveal d3">
+          <span>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-pin"/></svg>
+            <span data-i18n="addr.short">ქუჩის სახელი 00, თბილისი</span>
+          </span>
+          <span class="status" data-status>
+            <i aria-hidden="true"></i><span data-status-text data-i18n="hours.daily">ყოველდღე 10:00-20:00</span>
+          </span>
+        </div>
+      </div>
+
+      <figure class="hero-figure frame reveal d2">
+        <div class="slot"><img src="assets/img/hero-800.webp" width="1200" height="1500" alt="ნათელი სალონის ინტერიერი მცენარეებით" srcset="assets/img/hero-800.webp 800w, assets/img/hero-1200.webp 1200w" sizes="(min-width: 900px) 460px, 90vw" fetchpriority="high" data-i18n-attr="alt=alt.hero"></div>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="sec sec-cream">
+  <div class="wrap">
+    <div class="about-grid">
+      <figure class="portrait frame reveal">
+        <div class="slot"><img src="assets/img/about-600.webp" width="900" height="1125" alt="სტილისტი მუშაობს ნათელ სალონში" srcset="assets/img/about-600.webp 600w, assets/img/about-900.webp 900w" sizes="(min-width: 900px) 380px, 90vw" loading="lazy" decoding="async" data-i18n-attr="alt=alt.about"></div>
+      </figure>
+
+      <div class="about-body">
+        <div class="section-head reveal d1">
+          <span class="eyebrow" data-i18n="about.eyebrow">ჩვენ შესახებ</span>
+          <h2 class="h2" data-i18n="about.title">სალონი, რომელიც ცოცხალ სივრცედ იქცა</h2>
+        </div>
+        <p class="reveal d2" data-i18n="about.p1">ჩვენი გუნდი წლებია მუშაობს სილამაზის ინდუსტრიაში. თითოეული ოსტატი რეგულარულად გადის გადამზადებას და თვალს ადევნებს ახალ ტექნიკებსა და ტენდენციებს.</p>
+        <p class="reveal d2" data-i18n="about.p2">ეს მხოლოდ სავარძელი და სარკე არ არის. აქ ბუნებრივი შუქი, მცენარეები და მშვიდი გარემო ვიზიტის ისეთივე ნაწილია, როგორც თავად მომსახურება.</p>
+        <p class="reveal d3" data-i18n="about.p3">ჩვენი მიდგომა მარტივია: არ არსებობს ერთი უნივერსალური ფორმა ან ფერი. არსებობს კონკრეტული ადამიანი, მისი თმის სტრუქტურა, სახის პროპორციები, ცხოვრების რიტმი და გემოვნება. სწორედ აქედან ვიწყებთ.</p>
+        <div class="byline reveal d3">
+          <b data-i18n="team.m1.name">ანა მ.</b>
+          <small data-i18n="about.role">დამფუძნებელი და წამყვანი სტილისტი</small>
+        </div>
+      </div>
+    </div>
+
+    <div class="points">
+      <div class="point reveal">
+        <span class="point-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><use href="#i-award"/></svg></span>
+        <div>
+          <h3 data-i18n="pt1.t">გამოცდილი ოსტატები</h3>
+          <p data-i18n="pt1.p">ყველა ოსტატს მრავალწლიანი პრაქტიკა და მუდმივი გადამზადება აქვს.</p>
+        </div>
+      </div>
+      <div class="point reveal d1">
+        <span class="point-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><use href="#i-heart"/></svg></span>
+        <div>
+          <h3 data-i18n="pt2.t">ინდივიდუალური მიდგომა</h3>
+          <p data-i18n="pt2.p">ყოველი ვიზიტი კონსულტაციით იწყება და შედეგს თქვენთან ერთად ვგეგმავთ.</p>
+        </div>
+      </div>
+      <div class="point reveal d2">
+        <span class="point-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><use href="#i-leaf"/></svg></span>
+        <div>
+          <h3 data-i18n="pt3.t">სასიამოვნო სივრცე</h3>
+          <p data-i18n="pt3.p">ბუნებრივი შუქი, ცოცხალი მცენარეები და მშვიდი მუსიკა.</p>
+        </div>
+      </div>
+      <div class="point reveal d3">
+        <span class="point-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><use href="#i-mobile"/></svg></span>
+        <div>
+          <h3 data-i18n="pt4.t">მარტივი დაჯავშნა</h3>
+          <p data-i18n="pt4.p">დაჯავშნეთ ონლაინ, დაგვირეკეთ ან მოგვწერეთ WhatsApp-ში.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="services" class="sec">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow" data-i18n="svc.eyebrow">სერვისები</span>
+      <h2 class="h2" data-i18n="svc.title">რას გთავაზობთ</h2>
+      <p class="lead" data-i18n="svc.lead">თითოეულ მომსახურებას წინ უძღვის კონსულტაცია: ჯერ გისმენთ, შემდეგ ვიწყებთ მუშაობას.</p>
+    </div>
+
+    <ol class="svc-list">
+      <li class="svc reveal">
+        <span class="svc-num" aria-hidden="true">01</span>
+        <div class="svc-body">
+          <h3 data-i18n="svc.s1.name">თმის შეღებვა და მოვლა</h3>
+          <p data-i18n="svc.s1.desc">შეღებვა, მელირება, გაღიავება და ტონირება. ფერს თქვენი კანის ტონისა და თმის სტრუქტურის მიხედვით ვარჩევთ, აღმდგენი პროცედურებით კი თმას ჯანსაღად ვინარჩუნებთ.</p>
+        </div>
+        <a class="svc-link" href="#booking" data-book="s1" aria-label="დაჯავშნე: თმის შეღებვა და მოვლა" data-i18n-attr="aria-label=svc.s1.aria">
+          <span data-i18n="svc.book">დაჯავშნე</span> <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-arrow"/></svg>
+        </a>
+      </li>
+      <li class="svc reveal d1">
+        <span class="svc-num" aria-hidden="true">02</span>
+        <div class="svc-body">
+          <h3 data-i18n="svc.s2.name">შეჭრა და სტილი</h3>
+          <p data-i18n="svc.s2.desc">ქალისა და მამაკაცის თმის შეჭრა, ფორმის კორექცია, თმის დავარცხნა და საზეიმო ვარცხნილობა.</p>
+        </div>
+        <a class="svc-link" href="#booking" data-book="s2" aria-label="დაჯავშნე: შეჭრა და სტილი" data-i18n-attr="aria-label=svc.s2.aria">
+          <span data-i18n="svc.book">დაჯავშნე</span> <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-arrow"/></svg>
+        </a>
+      </li>
+      <li class="svc reveal">
+        <span class="svc-num" aria-hidden="true">03</span>
+        <div class="svc-body">
+          <h3 data-i18n="svc.s3.name">წვერის მოვლა და დიზაინი</h3>
+          <p data-i18n="svc.s3.desc">წვერის ფორმას სახის პროპორციების მიხედვით ვარჩევთ და გთავაზობთ ზუსტ კონტურს, ცხელ პირსახოცსა და მოვლის ზეთებს.</p>
+        </div>
+        <a class="svc-link" href="#booking" data-book="s3" aria-label="დაჯავშნე: წვერის მოვლა და დიზაინი" data-i18n-attr="aria-label=svc.s3.aria">
+          <span data-i18n="svc.book">დაჯავშნე</span> <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-arrow"/></svg>
+        </a>
+      </li>
+      <li class="svc reveal d1">
+        <span class="svc-num" aria-hidden="true">04</span>
+        <div class="svc-body">
+          <h3 data-i18n="svc.s4.name">კანის მოვლა</h3>
+          <p data-i18n="svc.s4.desc">სახის წმენდა, დატენიანება და აღმდგენი პროცედურები, რომლებსაც კანის ტიპის შეფასების შემდეგ ვარჩევთ.</p>
+        </div>
+        <a class="svc-link" href="#booking" data-book="s4" aria-label="დაჯავშნე: კანის მოვლა" data-i18n-attr="aria-label=svc.s4.aria">
+          <span data-i18n="svc.book">დაჯავშნე</span> <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-arrow"/></svg>
+        </a>
+      </li>
+      <li class="svc reveal">
+        <span class="svc-num" aria-hidden="true">05</span>
+        <div class="svc-body">
+          <h3 data-i18n="svc.s5.name">მანიკური და პედიკური</h3>
+          <p data-i18n="svc.s5.desc">ჰიგიენური და კლასიკური მანიკური, პედიკური, ფრჩხილების დაფარვა და გამაგრება. ვმუშაობთ სტერილური ინსტრუმენტებით.</p>
+        </div>
+        <a class="svc-link" href="#booking" data-book="s5" aria-label="დაჯავშნე: მანიკური და პედიკური" data-i18n-attr="aria-label=svc.s5.aria">
+          <span data-i18n="svc.book">დაჯავშნე</span> <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-arrow"/></svg>
+        </a>
+      </li>
+      <li class="svc reveal d1">
+        <span class="svc-num" aria-hidden="true">06</span>
+        <div class="svc-body">
+          <h3 data-i18n="svc.s6.name">მაკიაჟი</h3>
+          <p data-i18n="svc.s6.desc">დღის, საღამოსა და საზეიმო მაკიაჟი, ბუნებრივი ან გამოკვეთილი, თქვენი სურვილის მიხედვით.</p>
+        </div>
+        <a class="svc-link" href="#booking" data-book="s6" aria-label="დაჯავშნე: მაკიაჟი" data-i18n-attr="aria-label=svc.s6.aria">
+          <span data-i18n="svc.book">დაჯავშნე</span> <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-arrow"/></svg>
+        </a>
+      </li>
+    </ol>
+
+    <div class="prices reveal" id="prices">
+      <h3 data-i18n="pr.title">ფასები</h3>
+      <div class="tabs" role="tablist" aria-label="ფასების კატეგორიები" data-i18n-attr="aria-label=pr.tabs">
+        <button type="button" class="tab" role="tab" id="tab-hair" aria-controls="panel-hair" aria-selected="true" tabindex="0" data-i18n="pr.hair">თმა</button>
+        <button type="button" class="tab" role="tab" id="tab-men" aria-controls="panel-men" aria-selected="false" tabindex="-1" data-i18n="pr.men">მამაკაცები</button>
+        <button type="button" class="tab" role="tab" id="tab-nails" aria-controls="panel-nails" aria-selected="false" tabindex="-1" data-i18n="pr.nails">ფრჩხილები</button>
+        <button type="button" class="tab" role="tab" id="tab-face" aria-controls="panel-face" aria-selected="false" tabindex="-1" data-i18n="pr.face">სახე და მაკიაჟი</button>
+      </div>
+      <div class="tab-panel" role="tabpanel" id="panel-hair" aria-labelledby="tab-hair">
+        <ul class="price-list">
+          <li class="price-row"><span class="pn" data-i18n="pr.hair.0.n">თმის შეჭრა</span><span class="fill" aria-hidden="true"></span><span class="pv" data-i18n="pr.hair.0.v">45-70 ₾</span></li>
+          <li class="price-row"><span class="pn" data-i18n="pr.hair.1.n">თმის დავარცხნა</span><span class="fill" aria-hidden="true"></span><span class="pv" data-i18n="pr.hair.1.v">35 ₾-დან</span></li>
+          <li class="price-row"><span class="pn" data-i18n="pr.hair.2.n">თმის შეღებვა</span><span class="fill" aria-hidden="true"></span><span class="pv" data-i18n="pr.hair.2.v">90 ₾-დან</span></li>
+          <li class="price-row"><span class="pn" data-i18n="pr.hair.3.n">მელირება</span><span class="fill" aria-hidden="true"></span><span class="pv" data-i18n="pr.hair.3.v">250-500 ₾</span></li>
+          <li class="price-row"><span class="pn" data-i18n="pr.hair.4.n">ტონირება</span><span class="fill" aria-hidden="true"></span><span class="pv" data-i18n="pr.hair.4.v">70 ₾-დან</span></li>
+          <li class="price-row"><span class="pn" data-i18n="pr.hair.5.n">აღმდგენი პროცედურა</span><span class="fill" aria-hidden="true"></span><span class="pv" data-i18n="pr.hair.5.v">60-150 ₾</span></li>
+        </ul>
+      </div>
+      <div class="tab-panel" role="tabpanel" id="panel-men" aria-labelledby="tab-men" hidden>
+        <ul class="price-list">
+          <li class="price-row"><span class="pn" data-i18n="pr.men.0.n">თმის შეჭრა</span><span class="fill" aria-hidden="true"></span><span class="pv" data-i18n="pr.men.0.v">30-40 ₾</span></li>
+          <li class="price-row"><span class="pn" data-i18n="pr.men.1.n">წვერის კორექცია</span><span class="fill" aria-hidden="true"></span><span class="pv" data-i18n="pr.men.1.v">20-30 ₾</span></li>
+          <li class="price-row"><span class="pn" data-i18n="pr.men.2.n">შეჭრა და წვერი</span><span class="fill" aria-hidden="true"></span><span class="pv" data-i18n="pr.men.2.v">45-60 ₾</span></li>
+          <li class="price-row"><span class="pn" data-i18n="pr.men.3.n">ცხელი პირსახოცით პარსვა</span><span class="fill" aria-hidden="true"></span><span class="pv" data-i18n="pr.men.3.v">35 ₾</span></li>
+          <li class="price-row"><span class="pn" data-i18n="pr.men.4.n">თმის შეღებვა</span><span class="fill" aria-hidden="true"></span><span class="pv" data-i18n="pr.men.4.v">50 ₾-დან</span></li>
+        </ul>
+      </div>
+      <div class="tab-panel" role="tabpanel" id="panel-nails" aria-labelledby="tab-nails" hidden>
+        <ul class="price-list">
+          <li class="price-row"><span class="pn" data-i18n="pr.nails.0.n">კლასიკური მანიკური</span><span class="fill" aria-hidden="true"></span><span class="pv" data-i18n="pr.nails.0.v">30 ₾</span></li>
+          <li class="price-row"><span class="pn" data-i18n="pr.nails.1.n">გელ-ლაქით დაფარვა</span><span class="fill" aria-hidden="true"></span><span class="pv" data-i18n="pr.nails.1.v">45 ₾-დან</span></li>
+          <li class="price-row"><span class="pn" data-i18n="pr.nails.2.n">პედიკური</span><span class="fill" aria-hidden="true"></span><span class="pv" data-i18n="pr.nails.2.v">50 ₾-დან</span></li>
+          <li class="price-row"><span class="pn" data-i18n="pr.nails.3.n">ფრჩხილების გამაგრება</span><span class="fill" aria-hidden="true"></span><span class="pv" data-i18n="pr.nails.3.v">55 ₾-დან</span></li>
+        </ul>
+      </div>
+      <div class="tab-panel" role="tabpanel" id="panel-face" aria-labelledby="tab-face" hidden>
+        <ul class="price-list">
+          <li class="price-row"><span class="pn" data-i18n="pr.face.0.n">სახის წმენდა</span><span class="fill" aria-hidden="true"></span><span class="pv" data-i18n="pr.face.0.v">80 ₾-დან</span></li>
+          <li class="price-row"><span class="pn" data-i18n="pr.face.1.n">დამატენიანებელი პროცედურა</span><span class="fill" aria-hidden="true"></span><span class="pv" data-i18n="pr.face.1.v">70 ₾-დან</span></li>
+          <li class="price-row"><span class="pn" data-i18n="pr.face.2.n">დღის მაკიაჟი</span><span class="fill" aria-hidden="true"></span><span class="pv" data-i18n="pr.face.2.v">60 ₾</span></li>
+          <li class="price-row"><span class="pn" data-i18n="pr.face.3.n">საღამოს მაკიაჟი</span><span class="fill" aria-hidden="true"></span><span class="pv" data-i18n="pr.face.3.v">90 ₾</span></li>
+          <li class="price-row"><span class="pn" data-i18n="pr.face.4.n">საქორწილო მაკიაჟი</span><span class="fill" aria-hidden="true"></span><span class="pv" data-i18n="pr.face.4.v">150 ₾-დან</span></li>
+        </ul>
+      </div>
+      <p class="note" data-i18n-html="pr.note">ფასი დამოკიდებულია თმის სიგრძესა და მომსახურების მოცულობაზე. ზუსტი ღირებულების გასაგებად <a href="tel:+995000000000">დაგვირეკეთ</a>.</p>
+    </div>
+  </div>
+</section>
+
+<section id="team" class="sec sec-cream">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow" data-i18n="team.eyebrow">გუნდი</span>
+      <h2 class="h2" data-i18n="team.title">ოსტატები, რომლებიც გისმენენ</h2>
+      <p class="lead" data-i18n="team.lead">აირჩიეთ სპეციალისტი და ჯავშნის ფორმა მას ავტომატურად მიუთითებს.</p>
+    </div>
+    <div class="team">
+      <article class="member reveal">
+        <div class="m-photo"><img src="assets/img/team-1.webp" width="600" height="750" alt="თმის შეჭრა მაკრატლით" loading="lazy" decoding="async" data-i18n-attr="alt=alt.team-1"></div>
+        <h3 data-i18n="team.m1.name">ანა მ.</h3>
+        <p data-i18n="team.m1.role">დამფუძნებელი, წამყვანი სტილისტი</p>
+        <a class="svc-link" href="#booking" data-stylist="m1" aria-label="დაჯავშნე: ანა მ." data-i18n-attr="aria-label=team.m1.aria">
+          <span data-i18n="svc.book">დაჯავშნე</span> <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-arrow"/></svg>
+        </a>
+      </article>
+      <article class="member reveal d1">
+        <div class="m-photo"><img src="assets/img/team-2.webp" width="600" height="750" alt="სტილისტი მუშაობს კლიენტის თმაზე" loading="lazy" decoding="async" data-i18n-attr="alt=alt.team-2"></div>
+        <h3 data-i18n="team.m2.name">ნინო კ.</h3>
+        <p data-i18n="team.m2.role">კოლორისტი</p>
+        <a class="svc-link" href="#booking" data-stylist="m2" aria-label="დაჯავშნე: ნინო კ." data-i18n-attr="aria-label=team.m2.aria">
+          <span data-i18n="svc.book">დაჯავშნე</span> <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-arrow"/></svg>
+        </a>
+      </article>
+      <article class="member reveal d2">
+        <div class="m-photo"><img src="assets/img/team-3.webp" width="600" height="750" alt="ბარბერი თმას თხელი მაკრატლით ჭრის" loading="lazy" decoding="async" data-i18n-attr="alt=alt.team-3"></div>
+        <h3 data-i18n="team.m3.name">გიორგი ბ.</h3>
+        <p data-i18n="team.m3.role">ბარბერი</p>
+        <a class="svc-link" href="#booking" data-stylist="m3" aria-label="დაჯავშნე: გიორგი ბ." data-i18n-attr="aria-label=team.m3.aria">
+          <span data-i18n="svc.book">დაჯავშნე</span> <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-arrow"/></svg>
+        </a>
+      </article>
+      <article class="member reveal d3">
+        <div class="m-photo"><img src="assets/img/team-4.webp" width="600" height="750" alt="მანიკურის პროცესი სალონში" loading="lazy" decoding="async" data-i18n-attr="alt=alt.team-4"></div>
+        <h3 data-i18n="team.m4.name">მარიამ ლ.</h3>
+        <p data-i18n="team.m4.role">მანიკურისა და პედიკურის ოსტატი</p>
+        <a class="svc-link" href="#booking" data-stylist="m4" aria-label="დაჯავშნე: მარიამ ლ." data-i18n-attr="aria-label=team.m4.aria">
+          <span data-i18n="svc.book">დაჯავშნე</span> <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-arrow"/></svg>
+        </a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="booking" class="sec">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow" data-i18n="bk.eyebrow">ონლაინ ჯავშანი</span>
+      <h2 class="h2" data-i18n="bk.title">დაჯავშნეთ ვიზიტი</h2>
+      <p class="lead" data-i18n="bk.lead">აირჩიეთ სერვისი, სპეციალისტი და სასურველი დრო, შემდეგ კი ჯავშანი WhatsApp-ით დაადასტურეთ.</p>
+    </div>
+
+    <div class="booking-grid">
+      <div class="booking reveal d1" id="booking-flow">
+        <ol class="bk-steps">
+          <li class="bk-step is-active"><i aria-hidden="true">1</i><span data-i18n="bk.s1">სერვისი</span></li>
+          <li class="bk-step"><i aria-hidden="true">2</i><span data-i18n="bk.s2">დრო</span></li>
+          <li class="bk-step"><i aria-hidden="true">3</i><span data-i18n="bk.s3">დადასტურება</span></li>
+        </ol>
+
+        <div class="bk-panel is-active" data-step="1">
+          <h3 class="bk-title" tabindex="-1" data-i18n="bk.t1">აირჩიეთ სერვისი</h3>
+          <div class="bk-options">
+            <label class="bk-option">
+              <input type="radio" name="bk-service" value="s1">
+              <span class="bk-option-body">
+                <span class="bk-option-name" data-i18n="svc.s1.name">თმის შეღებვა და მოვლა</span>
+                <span class="bk-option-note" data-i18n="svc.s1.short">შეღებვა, მელირება, ტონირება, აღდგენა</span>
+              </span>
+              <span class="bk-check" aria-hidden="true"></span>
+            </label>
+            <label class="bk-option">
+              <input type="radio" name="bk-service" value="s2">
+              <span class="bk-option-body">
+                <span class="bk-option-name" data-i18n="svc.s2.name">შეჭრა და სტილი</span>
+                <span class="bk-option-note" data-i18n="svc.s2.short">შეჭრა, დავარცხნა, ვარცხნილობა</span>
+              </span>
+              <span class="bk-check" aria-hidden="true"></span>
+            </label>
+            <label class="bk-option">
+              <input type="radio" name="bk-service" value="s3">
+              <span class="bk-option-body">
+                <span class="bk-option-name" data-i18n="svc.s3.name">წვერის მოვლა და დიზაინი</span>
+                <span class="bk-option-note" data-i18n="svc.s3.short">ფორმა, კონტური, ცხელი პირსახოცი</span>
+              </span>
+              <span class="bk-check" aria-hidden="true"></span>
+            </label>
+            <label class="bk-option">
+              <input type="radio" name="bk-service" value="s4">
+              <span class="bk-option-body">
+                <span class="bk-option-name" data-i18n="svc.s4.name">კანის მოვლა</span>
+                <span class="bk-option-note" data-i18n="svc.s4.short">წმენდა, დატენიანება, აღდგენა</span>
+              </span>
+              <span class="bk-check" aria-hidden="true"></span>
+            </label>
+            <label class="bk-option">
+              <input type="radio" name="bk-service" value="s5">
+              <span class="bk-option-body">
+                <span class="bk-option-name" data-i18n="svc.s5.name">მანიკური და პედიკური</span>
+                <span class="bk-option-note" data-i18n="svc.s5.short">მანიკური, პედიკური, დაფარვა</span>
+              </span>
+              <span class="bk-check" aria-hidden="true"></span>
+            </label>
+            <label class="bk-option">
+              <input type="radio" name="bk-service" value="s6">
+              <span class="bk-option-body">
+                <span class="bk-option-name" data-i18n="svc.s6.name">მაკიაჟი</span>
+                <span class="bk-option-note" data-i18n="svc.s6.short">დღის, საღამოსა და საზეიმო</span>
+              </span>
+              <span class="bk-check" aria-hidden="true"></span>
+            </label>
+          </div>
+          <div class="bk-actions">
+            <button type="button" class="btn btn-primary" data-next="2" data-i18n="bk.next">შემდეგი</button>
+          </div>
+        </div>
+
+        <div class="bk-panel" data-step="2">
+          <h3 class="bk-title" tabindex="-1" data-i18n="bk.t2">აირჩიეთ სპეციალისტი და დრო</h3>
+          <div class="bk-field">
+            <span class="bk-label" id="bkStylistLabel" data-i18n="bk.stylist">სპეციალისტი</span>
+            <div class="bk-chips" role="group" aria-labelledby="bkStylistLabel">
+              <label class="bk-chip"><input type="radio" name="bk-stylist" value="any" checked><span data-i18n="bk.any">ნებისმიერი</span></label>
+              <label class="bk-chip"><input type="radio" name="bk-stylist" value="m1"><span data-i18n="team.m1.name">ანა მ.</span></label>
+              <label class="bk-chip"><input type="radio" name="bk-stylist" value="m2"><span data-i18n="team.m2.name">ნინო კ.</span></label>
+              <label class="bk-chip"><input type="radio" name="bk-stylist" value="m3"><span data-i18n="team.m3.name">გიორგი ბ.</span></label>
+              <label class="bk-chip"><input type="radio" name="bk-stylist" value="m4"><span data-i18n="team.m4.name">მარიამ ლ.</span></label>
+            </div>
+          </div>
+          <div class="bk-field">
+            <span class="bk-label" id="bkDayLabel" data-i18n="bk.date">თარიღი</span>
+            <div class="bk-days" id="bkDays" role="group" aria-labelledby="bkDayLabel"></div>
+          </div>
+          <div class="bk-field">
+            <span class="bk-label" id="bkTimeLabel" data-i18n="bk.time">საათი</span>
+            <div class="bk-slots" role="group" aria-labelledby="bkTimeLabel">
+              <label class="bk-slot"><input type="radio" name="bk-time" value="10:00"><span>10:00</span></label>
+              <label class="bk-slot"><input type="radio" name="bk-time" value="11:30"><span>11:30</span></label>
+              <label class="bk-slot"><input type="radio" name="bk-time" value="13:00"><span>13:00</span></label>
+              <label class="bk-slot"><input type="radio" name="bk-time" value="14:30"><span>14:30</span></label>
+              <label class="bk-slot"><input type="radio" name="bk-time" value="16:00"><span>16:00</span></label>
+              <label class="bk-slot"><input type="radio" name="bk-time" value="17:30"><span>17:30</span></label>
+              <label class="bk-slot"><input type="radio" name="bk-time" value="19:00"><span>19:00</span></label>
+            </div>
+          </div>
+          <div class="bk-actions">
+            <button type="button" class="btn btn-outline" data-prev="1" data-i18n="bk.back">უკან</button>
+            <button type="button" class="btn btn-primary" data-next="3" data-i18n="bk.next">შემდეგი</button>
+          </div>
+        </div>
+
+        <div class="bk-panel" data-step="3">
+          <h3 class="bk-title" tabindex="-1" data-i18n="bk.t3">დაადასტურეთ ჯავშანი</h3>
+          <div class="bk-summary">
+            <dl>
+              <dt data-i18n="bk.service">სერვისი</dt><dd id="bkSumService"></dd>
+              <dt data-i18n="bk.stylist">სპეციალისტი</dt><dd id="bkSumStylist"></dd>
+              <dt data-i18n="bk.date">თარიღი</dt><dd id="bkSumDate"></dd>
+              <dt data-i18n="bk.time">საათი</dt><dd id="bkSumTime"></dd>
+            </dl>
+          </div>
+          <div class="bk-field">
+            <label class="bk-label" for="bkName" data-i18n="bk.name">სახელი</label>
+            <input class="bk-input" type="text" id="bkName" autocomplete="name" placeholder="თქვენი სახელი" data-i18n-attr="placeholder=bk.namePh">
+          </div>
+          <div class="bk-field">
+            <label class="bk-label" for="bkPhone" data-i18n="bk.phone">ტელეფონი</label>
+            <input class="bk-input" type="tel" id="bkPhone" inputmode="tel" autocomplete="tel" placeholder="5XX XXX XXX">
+          </div>
+          <div class="bk-preview">
+            <span class="bk-label" data-i18n="bk.preview">შეტყობინება</span>
+            <p class="bubble" id="bkPreview" aria-live="polite"></p>
+          </div>
+          <div class="bk-actions">
+            <button type="button" class="btn btn-outline" data-prev="2" data-i18n="bk.back">უკან</button>
+            <a class="btn btn-light btn-wrap" id="bkSend" href="https://wa.me/995000000000" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-wa"/></svg>
+              <span data-i18n="bk.send">დაჯავშნის დადასტურება WhatsApp-ით</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="bk-panel" data-step="4">
+          <div class="bk-done">
+            <div class="bk-done-mark" aria-hidden="true"><svg viewBox="0 0 24 24"><use href="#i-check"/></svg></div>
+            <h3 class="bk-title" tabindex="-1" data-i18n="bk.doneT">მოთხოვნა მზადაა</h3>
+            <p data-i18n="bk.doneP">გააგზავნეთ WhatsApp-ში გახსნილი შეტყობინება და სალონი პასუხში დაგიდასტურებთ დროს.</p>
+            <div class="bk-actions">
+              <button type="button" class="btn btn-outline" id="bkReset" data-i18n="bk.reset">ახალი ჯავშანი</button>
+              <a class="btn btn-primary" id="bkResend" href="https://wa.me/995000000000" target="_blank" rel="noopener" data-i18n="bk.resend">WhatsApp-ის გახსნა</a>
+            </div>
+          </div>
+        </div>
+
+        <p class="bk-hint" id="bkHint" role="alert" hidden></p>
+        <p class="bk-note" data-i18n="bk.note">ჯავშანი დადასტურდება სალონის პასუხის შემდეგ.</p>
+      </div>
+
+      <aside class="bk-aside reveal d2">
+        <h3 data-i18n="bk.asideT">გირჩევნიათ დარეკვა?</h3>
+        <p data-i18n="bk.asideP">დაგვირეკეთ და დროს ტელეფონითაც შეგირჩევთ.</p>
+        <a class="btn btn-outline" href="tel:+995000000000">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-phone"/></svg>
+          +995 5XX XX XX XX
+        </a>
+        <p class="status" data-status>
+          <i aria-hidden="true"></i><span data-status-text data-i18n="hours.daily">ყოველდღე 10:00-20:00</span>
+        </p>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<section class="band" aria-labelledby="bandTitle">
+  <picture>
+    <source media="(min-width: 700px)" srcset="assets/img/band-2000.webp">
+    <img src="assets/img/band-900.webp" width="900" height="1200" loading="lazy" decoding="async" alt="">
+  </picture>
+  <div class="wrap">
+    <span class="eyebrow reveal" data-i18n="band.eyebrow">სივრცე</span>
+    <h2 id="bandTitle" class="reveal d1" data-i18n="band.title">სილამაზისა და სტილის ცოცხალი სივრცე</h2>
+    <div class="rule center reveal d1" aria-hidden="true"><span></span></div>
+    <p class="reveal d2" data-i18n="band.p">ბუნებრივი შუქი, მცენარეები და თბილი საღამოები. ვიზიტი აქ სავარძელთან არ მთავრდება.</p>
+  </div>
+</section>
+
+<section id="gallery" class="sec">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow" data-i18n="gal.eyebrow">გალერეა</span>
+      <h2 class="h2" data-i18n="gal.title">სივრცე და ნამუშევრები</h2>
+    </div>
+    <div class="filters reveal" role="group" aria-label="გალერეის ფილტრი" data-i18n-attr="aria-label=gal.filters">
+      <button type="button" class="filter" data-filter="all" aria-pressed="true" data-i18n="gal.all">ყველა</button>
+      <button type="button" class="filter" data-filter="hair" aria-pressed="false" data-i18n="gal.hair">თმა</button>
+      <button type="button" class="filter" data-filter="nails" aria-pressed="false" data-i18n="gal.nails">ფრჩხილები</button>
+      <button type="button" class="filter" data-filter="space" aria-pressed="false" data-i18n="gal.space">სივრცე</button>
+    </div>
+    <div class="gallery">
+      <figure class="tile reveal" data-cat="hair">
+        <button type="button" class="tile-btn" aria-label="გადიდება: თმის შეღებვა" data-i18n-attr="aria-label=gal.g1.open">
+          <img src="assets/img/gal-1.webp" width="600" height="800" alt="ღია ფერის ტალღოვანი თმა, ხედი ზურგიდან" loading="lazy" decoding="async" data-full="assets/img/gal-1-full.webp" data-i18n-attr="alt=alt.gal-1">
+        </button>
+        <figcaption data-i18n="gal.g1">თმის შეღებვა</figcaption>
+      </figure>
+      <figure class="tile reveal d1" data-cat="nails">
+        <button type="button" class="tile-btn" aria-label="გადიდება: მანიკური" data-i18n-attr="aria-label=gal.g2.open">
+          <img src="assets/img/gal-2.webp" width="600" height="800" alt="ღია ვარდისფერი მანიკური" loading="lazy" decoding="async" data-full="assets/img/gal-2-full.webp" data-i18n-attr="alt=alt.gal-2">
+        </button>
+        <figcaption data-i18n="gal.g2">მანიკური</figcaption>
+      </figure>
+      <figure class="tile reveal d2" data-cat="space">
+        <button type="button" class="tile-btn" aria-label="გადიდება: მისაღები" data-i18n-attr="aria-label=gal.g3.open">
+          <img src="assets/img/gal-3.webp" width="600" height="800" alt="სალონის მისაღები თმის მოვლის საშუალებებით" loading="lazy" decoding="async" data-full="assets/img/gal-3-full.webp" data-i18n-attr="alt=alt.gal-3">
+        </button>
+        <figcaption data-i18n="gal.g3">მისაღები</figcaption>
+      </figure>
+      <figure class="tile reveal d3" data-cat="hair">
+        <button type="button" class="tile-btn" aria-label="გადიდება: შეჭრა და სტილი" data-i18n-attr="aria-label=gal.g4.open">
+          <img src="assets/img/gal-4.webp" width="600" height="800" alt="გრძელი ღია ფერის ტალღების დავარცხნა" loading="lazy" decoding="async" data-full="assets/img/gal-4-full.webp" data-i18n-attr="alt=alt.gal-4">
+        </button>
+        <figcaption data-i18n="gal.g4">შეჭრა და სტილი</figcaption>
+      </figure>
+      <figure class="tile reveal" data-cat="space">
+        <button type="button" class="tile-btn" aria-label="გადიდება: მოსაცდელი ზონა" data-i18n-attr="aria-label=gal.g5.open">
+          <img src="assets/img/gal-5.webp" width="600" height="800" alt="წითელი ვინტაჟური დივანი აგურის კედელთან" loading="lazy" decoding="async" data-full="assets/img/gal-5-full.webp" data-i18n-attr="alt=alt.gal-5">
+        </button>
+        <figcaption data-i18n="gal.g5">მოსაცდელი ზონა</figcaption>
+      </figure>
+      <figure class="tile reveal d1" data-cat="nails">
+        <button type="button" class="tile-btn" aria-label="გადიდება: პედიკური" data-i18n-attr="aria-label=gal.g6.open">
+          <img src="assets/img/gal-6.webp" width="600" height="800" alt="პედიკური წითელი ლაქით" loading="lazy" decoding="async" data-full="assets/img/gal-6-full.webp" data-i18n-attr="alt=alt.gal-6">
+        </button>
+        <figcaption data-i18n="gal.g6">პედიკური</figcaption>
+      </figure>
+      <figure class="tile reveal d2" data-cat="hair">
+        <button type="button" class="tile-btn" aria-label="გადიდება: თმის მოვლა" data-i18n-attr="aria-label=gal.g7.open">
+          <img src="assets/img/gal-7.webp" width="600" height="800" alt="გრძელი, გლუვი თმა" loading="lazy" decoding="async" data-full="assets/img/gal-7-full.webp" data-i18n-attr="alt=alt.gal-7">
+        </button>
+        <figcaption data-i18n="gal.g7">თმის მოვლა</figcaption>
+      </figure>
+      <figure class="tile reveal d3" data-cat="space">
+        <button type="button" class="tile-btn" aria-label="გადიდება: ტერასა" data-i18n-attr="aria-label=gal.g8.open">
+          <img src="assets/img/gal-8.webp" width="600" height="800" alt="ტერასა რბილი დივნითა და მცენარეებით" loading="lazy" decoding="async" data-full="assets/img/gal-8-full.webp" data-i18n-attr="alt=alt.gal-8">
+        </button>
+        <figcaption data-i18n="gal.g8">ტერასა</figcaption>
+      </figure>
+    </div>
+    <div class="gallery-foot reveal">
+      <p data-i18n="gal.more">მეტი ნამუშევარი ჩვენს Instagram-ზეა.</p>
+      <a class="btn btn-outline" href="https://www.instagram.com/" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-ig"/></svg>
+        <span data-i18n="gal.ig">ნახეთ Instagram-ზე</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section id="reviews" class="sec sec-cream">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow" data-i18n="rv.eyebrow">შეფასებები</span>
+      <h2 class="h2" data-i18n="rv.title">რას ამბობენ სტუმრები</h2>
+    </div>
+    <div class="reviews">
+      <figure class="review reveal">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-quote"/></svg>
+        <blockquote data-i18n="rv1.q">პირველად ვიყავი და ფერი ზუსტად ის მივიღე, რაც მინდოდა. კონსულტაციაზე ყველაფერი დეტალურად ამიხსნეს.</blockquote>
+        <figcaption><b data-i18n="rv1.n">თამარ ბ.</b><small data-i18n="rv1.s">თმის შეღებვა</small></figcaption>
+      </figure>
+      <figure class="review reveal d1">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-quote"/></svg>
+        <blockquote data-i18n="rv2.q">წვერის კორექციისთვის უკვე ერთი წელია აქ დავდივარ. ყოველთვის დროზე მიღებენ და შედეგი სტაბილურია.</blockquote>
+        <figcaption><b data-i18n="rv2.n">ლევან ჩ.</b><small data-i18n="rv2.s">წვერის მოვლა</small></figcaption>
+      </figure>
+      <figure class="review reveal d2">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-quote"/></svg>
+        <blockquote data-i18n="rv3.q">მშვიდი გარემო, სასიამოვნო გუნდი და სუფთა სამუშაო ადგილი. მანიკურმა ორ კვირაზე მეტხანს გაძლო.</blockquote>
+        <figcaption><b data-i18n="rv3.n">სოფო გ.</b><small data-i18n="rv3.s">მანიკური</small></figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section id="products" class="sec">
+  <div class="wrap">
+    <div class="shop">
+      <figure class="shop-photo reveal"><img src="assets/img/products-800.webp" width="800" height="1000" alt="თმის მოვლის საშუალებების ბოთლები" loading="lazy" decoding="async" data-i18n-attr="alt=alt.products"></figure>
+      <div>
+        <div class="section-head reveal">
+          <span class="eyebrow" data-i18n="prd.eyebrow">პროდუქტები</span>
+          <h2 class="h2" data-i18n="prd.title">თმის მოვლა სახლშიც</h2>
+          <p class="lead" data-i18n="prd.lead">სალონში შეგიძლიათ შეიძინოთ პროფესიონალური თმის მოვლის საშუალებები. ოსტატი დაგეხმარებათ თქვენი თმისთვის შესაფერისი საშუალების შერჩევაში.</p>
+        </div>
+        <ul class="shop-list">
+          <li class="reveal">
+            <h3 data-i18n="prd1.t">შამპუნები და კონდიციონერები</h3>
+            <p data-i18n="prd1.p">ყოველდღიური დაბანისთვის, თმის ტიპის მიხედვით.</p>
+          </li>
+          <li class="reveal">
+            <h3 data-i18n="prd2.t">აღმდგენი ნიღბები</h3>
+            <p data-i18n="prd2.p">ღრმა კვება შეღებვისა და გაღიავების შემდეგ.</p>
+          </li>
+          <li class="reveal">
+            <h3 data-i18n="prd3.t">თმის ზეთები</h3>
+            <p data-i18n="prd3.p">ბზინვარება, რბილი თმა და დაცული ბოლოები.</p>
+          </li>
+          <li class="reveal">
+            <h3 data-i18n="prd4.t">თერმოდამცავი საშუალებები</h3>
+            <p data-i18n="prd4.p">ფენისა და უთოს გამოყენებამდე.</p>
+          </li>
+          <li class="reveal">
+            <h3 data-i18n="prd5.t">სტაილინგის საშუალებები</h3>
+            <p data-i18n="prd5.p">მოცულობა, ფორმა და ფიქსაცია.</p>
+          </li>
+        </ul>
+        <p class="note reveal" data-i18n-html="prd.note">ხელმისაწვდომობისა და ფასების გასაგებად <a href="tel:+995000000000">დაგვირეკეთ</a>.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="faq" class="sec sec-cream">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow" data-i18n="faq.eyebrow">კითხვები</span>
+      <h2 class="h2" data-i18n="faq.title">ხშირად დასმული კითხვები</h2>
+    </div>
+    <div class="faq reveal">
+      <details>
+        <summary><span data-i18n="faq1.q">საჭიროა თუ არა წინასწარი ჯავშანი?</span><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-plus"/></svg></summary>
+        <p data-i18n="faq1.a">გირჩევთ, დაჯავშნოთ წინასწარ, თუმცა თავისუფალი დროის შემთხვევაში ჯავშნის გარეშეც მიგიღებთ.</p>
+      </details>
+      <details>
+        <summary><span data-i18n="faq2.q">როგორ გავაუქმო ან გადავიტანო ვიზიტი?</span><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-plus"/></svg></summary>
+        <p data-i18n="faq2.a">მოგვწერეთ WhatsApp-ში ან დაგვირეკეთ ვიზიტამდე მინიმუმ 3 საათით ადრე.</p>
+      </details>
+      <details>
+        <summary><span data-i18n="faq3.q">რამდენ ხანს გრძელდება თმის შეღებვა?</span><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-plus"/></svg></summary>
+        <p data-i18n="faq3.a">სერვისის მიხედვით, ჩვეულებრივ 2-დან 4 საათამდე. ზუსტ დროს კონსულტაციაზე გეტყვით.</p>
+      </details>
+      <details>
+        <summary><span data-i18n="faq4.q">როგორ შემიძლია გადახდა?</span><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-plus"/></svg></summary>
+        <p data-i18n="faq4.a">ნაღდი ფულით ან ბარათით.</p>
+      </details>
+      <details>
+        <summary><span data-i18n="faq5.q">გაქვთ თუ არა სასაჩუქრე ბარათები?</span><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-plus"/></svg></summary>
+        <p data-i18n="faq5.a">დიახ, სასაჩუქრე ბარათს ნებისმიერ თანხაზე შეიძენთ სალონში.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="sec">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow" data-i18n="ct.eyebrow">კონტაქტი</span>
+      <h2 class="h2" data-i18n="ct.title">გვეწვიეთ ან დაგვიკავშირდით</h2>
+    </div>
+    <div class="contact-grid">
+      <div>
+        <div class="c-row reveal">
+          <span class="c-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><use href="#i-pin"/></svg></span>
+          <div>
+            <h3 data-i18n="ct.address">მისამართი</h3>
+            <p data-i18n="ct.addr1">ქუჩის სახელი 00, მე-0 სართული</p>
+            <p class="sub" data-i18n="ct.addr2">რაიონი, თბილისი</p>
+          </div>
+        </div>
+        <a class="c-row reveal d1" href="tel:+995000000000">
+          <span class="c-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><use href="#i-phone"/></svg></span>
+          <div>
+            <h3 data-i18n="ct.phone">ტელეფონი</h3>
+            <p>+995 5XX XX XX XX</p>
+          </div>
+        </a>
+        <a class="c-row reveal d1" href="mailto:hello@example.com">
+          <span class="c-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><use href="#i-mail"/></svg></span>
+          <div>
+            <h3 data-i18n="ct.email">ელფოსტა</h3>
+            <p>hello@example.com</p>
+          </div>
+        </a>
+        <div class="c-row reveal d2">
+          <span class="c-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><use href="#i-clock"/></svg></span>
+          <div>
+            <h3 data-i18n="ct.hours">სამუშაო საათები</h3>
+            <p class="nw">10:00-20:00</p>
+            <p class="sub" data-i18n="ct.hoursSub">ყოველდღე, შაბათ-კვირის ჩათვლით</p>
+            <p class="sub status" data-status hidden>
+              <i aria-hidden="true"></i><span data-status-text></span>
+            </p>
+          </div>
+        </div>
+        <div class="socials reveal d2">
+          <a class="social" href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Facebook გვერდი" data-i18n-attr="aria-label=ct.fb">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-fb"/></svg>
+            Facebook
+          </a>
+          <a class="social" href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram გვერდი" data-i18n-attr="aria-label=ct.ig">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-ig"/></svg>
+            Instagram
+          </a>
+          <a class="social" href="https://wa.me/995000000000" target="_blank" rel="noopener" aria-label="WhatsApp-ით მოწერა" data-i18n-attr="aria-label=cta.wa">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-wa"/></svg>
+            WhatsApp
+          </a>
+        </div>
+      </div>
+      <div>
+        <div class="map-card reveal d1">
+          <iframe title="მდებარეობა რუკაზე" src="https://www.google.com/maps?q=Tbilisi&amp;z=13&amp;hl=ka&amp;output=embed"
+                  loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen data-i18n-attr="title=ct.map"></iframe>
+          <div class="map-foot">
+            <span data-i18n="ct.addr1">ქუჩის სახელი 00, მე-0 სართული</span>
+            <a href="https://www.google.com/maps/search/?api=1&amp;query=Tbilisi" target="_blank" rel="noopener" data-i18n="ct.directions">მარშრუტის ნახვა</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a class="wordmark" href="#hero" aria-label="Salon Name, გვერდის თავში დაბრუნება" data-i18n-attr="aria-label=nav.home">
+          <span class="monogram" aria-hidden="true">S</span>
+          <span class="wordmark-text"><small>SALON</small><b>NAME</b></span>
+        </a>
+        <p data-i18n="ft.tag">სილამაზისა და სტილის ცოცხალი სივრცე.</p>
+        <div class="foot-socials">
+          <a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-fb"/></svg>
+          </a>
+          <a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-ig"/></svg>
+          </a>
+          <a href="https://wa.me/995000000000" target="_blank" rel="noopener" aria-label="WhatsApp">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-wa"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="foot-col">
+        <h4 data-i18n="ft.nav">ნავიგაცია</h4>
+        <ul>
+          <li><a href="#about" data-i18n="nav.about">ჩვენ შესახებ</a></li>
+          <li><a href="#services" data-i18n="nav.services">სერვისები</a></li>
+          <li><a href="#prices" data-i18n="nav.prices">ფასები</a></li>
+          <li><a href="#team" data-i18n="nav.team">გუნდი</a></li>
+          <li><a href="#booking" data-i18n="nav.booking">ონლაინ ჯავშანი</a></li>
+          <li><a href="#gallery" data-i18n="nav.gallery">გალერეა</a></li>
+          <li><a href="#faq" data-i18n="nav.faq">კითხვები</a></li>
+          <li><a href="#contact" data-i18n="nav.contact">კონტაქტი</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h4 data-i18n="ft.contact">კონტაქტი</h4>
+        <ul>
+          <li><span data-i18n="addr.short">ქუჩის სახელი 00, თბილისი</span></li>
+          <li><a href="tel:+995000000000">+995 5XX XX XX XX</a></li>
+          <li><a href="mailto:hello@example.com">hello@example.com</a></li>
+          <li><span data-i18n="hours.daily">ყოველდღე 10:00-20:00</span></li>
+        </ul>
+        <h4 class="foot-theme" data-i18n="theme.label">ფერის თემა</h4>
+        <div class="themes"><button type="button" class="theme-dot" data-theme-set="a" aria-pressed="true" aria-label="ფერის თემა: კრემი და ოქრო" title="ფერის თემა: კრემი და ოქრო" data-i18n-attr="aria-label=theme.a,title=theme.a"><span style="--sw-a:#b08a4a;--sw-b:#faf6f0"></span></button><button type="button" class="theme-dot" data-theme-set="b" aria-pressed="false" aria-label="ფერის თემა: კონიაკი და მუხა" title="ფერის თემა: კონიაკი და მუხა" data-i18n-attr="aria-label=theme.b,title=theme.b"><span style="--sw-a:#a8693a;--sw-b:#f7f2ea"></span></button><button type="button" class="theme-dot" data-theme-set="c" aria-pressed="false" aria-label="ფერის თემა: გვიმრა და მარმარილო" title="ფერის თემა: გვიმრა და მარმარილო" data-i18n-attr="aria-label=theme.c,title=theme.c"><span style="--sw-a:#4a7a5d;--sw-b:#f6f7f3"></span></button></div>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© <span id="year">2026</span> Salon Name. <span data-i18n="ft.rights">ყველა უფლება დაცულია.</span></span>
+      <span data-i18n="ft.city">თბილისი, საქართველო</span>
+    </div>
+    <p class="foot-demo" data-i18n-html="ft.demo">საჩვენებელი პროექტი. დიზაინი და დეველოპმენტი: <a href="https://github.com/Protagonistst" target="_blank" rel="noopener">Beka Lominadze</a>. ფოტოები: <a href="https://unsplash.com" target="_blank" rel="noopener">Unsplash</a>.</p>
+  </div>
+</footer>
+
+<div class="theme-fab" role="group" aria-label="ფერის თემა" data-i18n-attr="aria-label=theme.label">
+  <span data-i18n="theme.short">ფერები</span>
+  <div class="themes"><button type="button" class="theme-dot" data-theme-set="a" aria-pressed="true" aria-label="ფერის თემა: კრემი და ოქრო" title="ფერის თემა: კრემი და ოქრო" data-i18n-attr="aria-label=theme.a,title=theme.a"><span style="--sw-a:#b08a4a;--sw-b:#faf6f0"></span></button><button type="button" class="theme-dot" data-theme-set="b" aria-pressed="false" aria-label="ფერის თემა: კონიაკი და მუხა" title="ფერის თემა: კონიაკი და მუხა" data-i18n-attr="aria-label=theme.b,title=theme.b"><span style="--sw-a:#a8693a;--sw-b:#f7f2ea"></span></button><button type="button" class="theme-dot" data-theme-set="c" aria-pressed="false" aria-label="ფერის თემა: გვიმრა და მარმარილო" title="ფერის თემა: გვიმრა და მარმარილო" data-i18n-attr="aria-label=theme.c,title=theme.c"><span style="--sw-a:#4a7a5d;--sw-b:#f6f7f3"></span></button></div>
+</div>
+
+<div class="callbar" id="callbar">
+  <a class="btn btn-primary" href="#booking" data-i18n="cta.book">დაჯავშნე</a>
+  <a class="icon-btn" href="tel:+995000000000" aria-label="დარეკვა" data-i18n-attr="aria-label=cta.call">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-phone"/></svg>
+  </a>
+  <a class="icon-btn" href="https://wa.me/995000000000" target="_blank" rel="noopener" aria-label="WhatsApp-ით მოწერა" data-i18n-attr="aria-label=cta.wa">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-wa"/></svg>
+  </a>
+</div>
+
+<dialog class="lb" id="lightbox" aria-label="ფოტოს გადიდებული ხედი" data-i18n-attr="aria-label=lb.label">
+  <div class="lb-inner">
+    <div class="lb-stage" id="lbStage"></div>
+    <p class="lb-cap" id="lbCap"></p>
+    <p class="lb-count" id="lbCount"></p>
+  </div>
+  <button type="button" class="lb-btn lb-close" id="lbClose" aria-label="დახურვა" data-i18n-attr="aria-label=lb.close"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-close"/></svg></button>
+  <button type="button" class="lb-btn lb-prev" id="lbPrev" aria-label="წინა ფოტო" data-i18n-attr="aria-label=lb.prev"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-left"/></svg></button>
+  <button type="button" class="lb-btn lb-next" id="lbNext" aria-label="შემდეგი ფოტო" data-i18n-attr="aria-label=lb.next"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-right"/></svg></button>
+</dialog>
+
+<script src="assets/js/i18n.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
