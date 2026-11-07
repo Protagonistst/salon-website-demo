@@ -98,7 +98,7 @@
   </div>
 </header>
 
-<div class="mobile-menu" id="mobileMenu">
+<nav class="mobile-menu" id="mobileMenu" aria-label="მობილური მენიუ" data-i18n-attr="aria-label=nav.mobile">
   <div class="wrap">
     <div class="inner">
       <ul>
@@ -116,7 +116,7 @@
       </div>
     </div>
   </div>
-</div>
+</nav>
 
 <main id="main">
 
@@ -387,7 +387,7 @@
     <div class="booking-grid">
       <div class="booking reveal d1" id="booking-flow">
         <ol class="bk-steps">
-          <li class="bk-step is-active"><i aria-hidden="true">1</i><span data-i18n="bk.s1">სერვისი</span></li>
+          <li class="bk-step is-active" aria-current="step"><i aria-hidden="true">1</i><span data-i18n="bk.s1">სერვისი</span></li>
           <li class="bk-step"><i aria-hidden="true">2</i><span data-i18n="bk.s2">დრო</span></li>
           <li class="bk-step"><i aria-hidden="true">3</i><span data-i18n="bk.s3">დადასტურება</span></li>
         </ol>
@@ -503,7 +503,7 @@
           </div>
           <div class="bk-preview">
             <span class="bk-label" data-i18n="bk.preview">შეტყობინება</span>
-            <p class="bubble" id="bkPreview" aria-live="polite"></p>
+            <p class="bubble" id="bkPreview"></p>
           </div>
           <div class="bk-actions">
             <button type="button" class="btn btn-outline" data-prev="2" data-i18n="bk.back">უკან</button>
@@ -530,7 +530,7 @@
         <p class="bk-note" data-i18n="bk.note">ჯავშანი დადასტურდება სალონის პასუხის შემდეგ.</p>
       </div>
 
-      <aside class="bk-aside reveal d2">
+      <div class="bk-aside reveal d2">
         <h3 data-i18n="bk.asideT">გირჩევნიათ დარეკვა?</h3>
         <p data-i18n="bk.asideP">დაგვირეკეთ და დროს ტელეფონითაც შეგირჩევთ.</p>
         <a class="btn btn-outline" href="tel:+995000000000">
@@ -540,7 +540,7 @@
         <p class="status" data-status>
           <i aria-hidden="true"></i><span data-status-text data-i18n="hours.daily">ყოველდღე 10:00-20:00</span>
         </p>
-      </aside>
+      </div>
     </div>
   </div>
 </section>
@@ -636,7 +636,7 @@
       <span class="eyebrow" data-i18n="rv.eyebrow">შეფასებები</span>
       <h2 class="h2" data-i18n="rv.title">რას ამბობენ სტუმრები</h2>
     </div>
-    <div class="reviews">
+    <div class="reviews" role="region" aria-label="რას ამბობენ სტუმრები" data-i18n-attr="aria-label=rv.title">
       <figure class="review reveal">
         <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-quote"/></svg>
         <blockquote data-i18n="rv1.q">პირველად ვიყავი და ფერი ზუსტად ის მივიღე, რაც მინდოდა. კონსულტაციაზე ყველაფერი დეტალურად ამიხსნეს.</blockquote>
@@ -851,12 +851,12 @@
   </div>
 </footer>
 
-<div class="theme-fab" role="group" aria-label="ფერის თემა" data-i18n-attr="aria-label=theme.label">
+<aside class="theme-fab" aria-label="ფერის თემა" data-i18n-attr="aria-label=theme.label">
   <span data-i18n="theme.short">ფერები</span>
-  <div class="themes"><button type="button" class="theme-dot" data-theme-set="a" aria-pressed="true" aria-label="ფერის თემა: კრემი და ოქრო" title="ფერის თემა: კრემი და ოქრო" data-i18n-attr="aria-label=theme.a,title=theme.a"><span style="--sw-a:#b08a4a;--sw-b:#faf6f0"></span></button><button type="button" class="theme-dot" data-theme-set="b" aria-pressed="false" aria-label="ფერის თემა: კონიაკი და მუხა" title="ფერის თემა: კონიაკი და მუხა" data-i18n-attr="aria-label=theme.b,title=theme.b"><span style="--sw-a:#a8693a;--sw-b:#f7f2ea"></span></button><button type="button" class="theme-dot" data-theme-set="c" aria-pressed="false" aria-label="ფერის თემა: გვიმრა და მარმარილო" title="ფერის თემა: გვიმრა და მარმარილო" data-i18n-attr="aria-label=theme.c,title=theme.c"><span style="--sw-a:#4a7a5d;--sw-b:#f6f7f3"></span></button></div>
+  <div class="themes"><button type="button" class="theme-dot" data-theme-set="a" aria-pressed="true" aria-label="ფერის თემა: კრემი და ოქრო" title="ფერის თემა: კრემი და ოქრო" data-i18n-attr="aria-label=theme.a,title=theme.a"><span style="--sw-a:#b08a4a;--sw-b:#faf6f0"></span></button><button type="button" class="theme-dot" data-theme-set="b" aria-pressed="false" aria-label="ფერის თემა: კონიაკი და მუხა" title="ფერის თემა: კონიაკი და მუხა" data-i18n-attr="aria-label=theme.b,title=theme.b"><span style="--sw-a:#a8693a;--sw-b:#f7f2ea"></span></button><button type="button" class="theme-dot" data-theme-set="c" aria-pressed="false" aria-label="ფერის თემა: გვიმრა და მარმარილო" title="ფერის თემა: გვიმრა და მარმარილო" data-i18n-attr="aria-label=theme.c,title=theme.c"><span style="--sw-a:#4a7a5d;--sw-b:#f6f7f3"></span></button></aside>
 </div>
 
-<div class="callbar" id="callbar">
+<nav class="callbar" id="callbar" aria-label="სწრაფი კავშირი" data-i18n-attr="aria-label=cta.quick">
   <a class="btn btn-primary" href="#booking" data-i18n="cta.book">დაჯავშნე</a>
   <a class="icon-btn" href="tel:+995000000000" aria-label="დარეკვა" data-i18n-attr="aria-label=cta.call">
     <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-phone"/></svg>
@@ -864,7 +864,7 @@
   <a class="icon-btn" href="https://wa.me/995000000000" target="_blank" rel="noopener" aria-label="WhatsApp-ით მოწერა" data-i18n-attr="aria-label=cta.wa">
     <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-wa"/></svg>
   </a>
-</div>
+</nav>
 
 <dialog class="lb" id="lightbox" aria-label="ფოტოს გადიდებული ხედი" data-i18n-attr="aria-label=lb.label">
   <div class="lb-inner">

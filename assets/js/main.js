@@ -254,6 +254,7 @@
         dots.forEach(function (dot, i) {
           dot.classList.toggle('is-active', i === n - 1);
           dot.classList.toggle('is-done', i < n - 1);
+          if (i === n - 1) { dot.setAttribute('aria-current', 'step'); } else { dot.removeAttribute('aria-current'); }
         });
         hint.hidden = true; hintKey = '';
         if (quiet) { return; }
@@ -395,6 +396,14 @@
   var params = new URLSearchParams(window.location.search);
   setTheme(params.get('theme') || load('tpl-theme') || 'a', false);
   setLang(params.get('lang') || load('tpl-lang') || 'ka', false);
+
+  /* ---- reviews: a keyboard stop only while it actually scrolls sideways ---- */
+  var reviews = $('.reviews');
+  function reviewsFocus() {
+    if (reviews.scrollWidth > reviews.clientWidth + 1) { reviews.tabIndex = 0; } else { reviews.removeAttribute('tabindex'); }
+  }
+  reviewsFocus();
+  window.addEventListener('resize', reviewsFocus);
 
   /* ---- observers ---- */
   var items  = $$('.reveal');
